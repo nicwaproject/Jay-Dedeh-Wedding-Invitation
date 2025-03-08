@@ -172,6 +172,7 @@ nav ul li a:hover {
 }
 
 .section1-content {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -188,6 +189,17 @@ nav ul li a:hover {
     margin: auto;
     max-width: 340px;
     min-height: 650px;
+}
+
+#birds-animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: auto;
+    pointer-events: none;
+    z-index: 1;
 }
 
 .section1-content img {
@@ -242,8 +254,6 @@ nav ul li a:hover {
 /* ..........SECTION 2......... */
 #section2 {
     background-image: var(--mobile-image);
-    background-size: cover;
-    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -392,7 +402,7 @@ nav ul li a:hover {
 }
 
 .profile img {
-    width: 200px; /* Adjust image width as needed */
+    width: 250px; /* Adjust image width as needed */
     height: auto; /* Adjust image height as needed */
     object-fit: cover; 
 }
@@ -889,7 +899,7 @@ nav ul li a:hover {
 }
 
 .thank-you-image {
-    width: 220px;
+    width: 250px;
 }
 
 .thank-you-content {
