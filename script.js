@@ -40,6 +40,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Event: Play/Pause music
     playPauseButton.addEventListener('click', togglePlayPause);
 
+    lottie.loadAnimation({
+        container: document.getElementById("birds-animation"),
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "birds.json" // Ganti dengan path file JSON animasi burung kamu
+    });
+    
     document.getElementById('goToSection3').addEventListener('click', function() {
         const section3 = document.getElementById('section3');
         if (section3) {
