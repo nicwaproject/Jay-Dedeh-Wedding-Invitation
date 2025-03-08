@@ -254,6 +254,8 @@ nav ul li a:hover {
 /* ..........SECTION 2......... */
 #section2 {
     background-image: var(--mobile-image);
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
